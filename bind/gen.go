@@ -385,6 +385,7 @@ func (g *Generator) cgoType(t types.Type) string {
 		case types.String:
 			return "nstring"
 		default:
+			return "uint64_t"
 			g.errorf("unsupported basic type: %s", t)
 		}
 	case *types.Slice:

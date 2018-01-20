@@ -615,6 +615,7 @@ func (g *JavaGen) jniType(T types.Type) string {
 		case types.String, types.UntypedString:
 			return "jstring"
 		default:
+			return "jlong"
 			g.errorf("unsupported basic type: %s", T)
 			return "TODO"
 		}

@@ -212,4 +212,4 @@ main Android project build.gradle, apply the gobind plugin after the android plu
 	}
 
 */
-package main // import "golang.org/x/mobile/cmd/gomobile"
+package main // import "github.com/Sidetalker/mobile/cmd/gomobile"
