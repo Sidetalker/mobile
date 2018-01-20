@@ -1289,7 +1289,7 @@ func (g *ObjcGen) objcType(typ types.Type) string {
 			return "int64_t"
 		case types.Uint8:
 			// byte is an alias of uint8, and the alias is lost.
-			return "byte"
+			return "Byte"
 		case types.Uint16:
 			return "uint16_t"
 		case types.Uint32:
