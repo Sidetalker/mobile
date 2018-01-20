@@ -307,9 +307,9 @@ func installOpenAL(gomobilepath string) error {
 }
 
 var commonPkgs = []string{
-	"golang.org/x/mobile/gl",
-	"golang.org/x/mobile/app",
-	"golang.org/x/mobile/exp/app/debug",
+	"github.com/Sidetalker/mobile/gl",
+	"github.com/Sidetalker/mobile/app",
+	"github.com/Sidetalker/mobile/exp/app/debug",
 }
 
 func installDarwin() error {

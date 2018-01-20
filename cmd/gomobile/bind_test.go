@@ -17,7 +17,7 @@ import (
 // TODO(crawshaw): TestBindIOS
 
 func TestImportPackagesPathCleaning(t *testing.T) {
-	slashPath := "golang.org/x/mobile/example/bind/hello/"
+	slashPath := "github.com/Sidetalker/mobile/example/bind/hello/"
 	pkgs, err := importPackages([]string{slashPath})
 	if err != nil {
 		t.Fatal(err)
@@ -76,7 +76,7 @@ func TestBindAndroid(t *testing.T) {
 		if goos == "windows" {
 			os.Setenv("HOMEDRIVE", "C:")
 		}
-		cmdBind.flag.Parse([]string{"golang.org/x/mobile/asset"})
+		cmdBind.flag.Parse([]string{"github.com/Sidetalker/mobile/asset"})
 		err := runBind(cmdBind)
 		if err != nil {
 			t.Log(buf.String())

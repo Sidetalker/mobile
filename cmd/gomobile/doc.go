@@ -176,7 +176,7 @@ create a gradle subproject and configure the gobind plugin in the build.gradle f
 	gobind {
 		// The Go package path; must be under one of the GOPATH elements or
 		// a relative to the current directory (e.g. ../../hello)
-		pkg = "golang.org/x/mobile/example/bind/hello"
+		pkg = "github.com/Sidetalker/mobile/example/bind/hello"
 
 		// Optional GOPATH.
 		// GOPATH = "/YOUR/GOPATH"
@@ -208,7 +208,7 @@ main Android project build.gradle, apply the gobind plugin after the android plu
 	apply plugin: "org.golang.mobile.bind"
 
 	gobind {
-		pkg = "golang.org/x/mobile/example/bind/reverse"
+		pkg = "github.com/Sidetalker/mobile/example/bind/reverse"
 	}
 
 */

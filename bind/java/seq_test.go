@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/mobile/internal/importers/java"
+	"github.com/Sidetalker/mobile/internal/importers/java"
 )
 
 func TestClasses(t *testing.T) {
@@ -23,21 +23,21 @@ func TestClasses(t *testing.T) {
 		t.Skipf("java importer is not available")
 	}
 	runTest(t, []string{
-		"golang.org/x/mobile/bind/testpkg/javapkg",
+		"github.com/Sidetalker/mobile/bind/testpkg/javapkg",
 	}, "", "ClassesTest")
 }
 
 func TestCustomPkg(t *testing.T) {
 	runTest(t, []string{
-		"golang.org/x/mobile/bind/testpkg",
+		"github.com/Sidetalker/mobile/bind/testpkg",
 	}, "org.golang.custompkg", "CustomPkgTest")
 }
 
 func TestJavaSeqTest(t *testing.T) {
 	runTest(t, []string{
-		"golang.org/x/mobile/bind/testpkg",
-		"golang.org/x/mobile/bind/testpkg/secondpkg",
-		"golang.org/x/mobile/bind/testpkg/simplepkg",
+		"github.com/Sidetalker/mobile/bind/testpkg",
+		"github.com/Sidetalker/mobile/bind/testpkg/secondpkg",
+		"github.com/Sidetalker/mobile/bind/testpkg/simplepkg",
 	}, "", "SeqTest")
 }
 
@@ -55,7 +55,7 @@ func TestJavaSeqBench(t *testing.T) {
 	if testing.Short() {
 		t.Skip("skipping benchmark in short mode.")
 	}
-	runTest(t, []string{"golang.org/x/mobile/bind/benchmark"}, "", "SeqBench")
+	runTest(t, []string{"github.com/Sidetalker/mobile/bind/benchmark"}, "", "SeqBench")
 }
 
 // runTest runs the Android java test class specified with javaCls. If javaPkg is

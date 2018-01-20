@@ -11,13 +11,13 @@ import (
 	"log"
 	"net"
 
-	"golang.org/x/mobile/app"
-	"golang.org/x/mobile/app/internal/apptest"
-	"golang.org/x/mobile/event/lifecycle"
-	"golang.org/x/mobile/event/paint"
-	"golang.org/x/mobile/event/size"
-	"golang.org/x/mobile/event/touch"
-	"golang.org/x/mobile/gl"
+	"github.com/Sidetalker/mobile/app"
+	"github.com/Sidetalker/mobile/app/internal/apptest"
+	"github.com/Sidetalker/mobile/event/lifecycle"
+	"github.com/Sidetalker/mobile/event/paint"
+	"github.com/Sidetalker/mobile/event/size"
+	"github.com/Sidetalker/mobile/event/touch"
+	"github.com/Sidetalker/mobile/gl"
 )
 
 func main() {

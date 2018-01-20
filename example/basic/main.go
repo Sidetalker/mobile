@@ -32,15 +32,15 @@ import (
 	"encoding/binary"
 	"log"
 
-	"golang.org/x/mobile/app"
-	"golang.org/x/mobile/event/lifecycle"
-	"golang.org/x/mobile/event/paint"
-	"golang.org/x/mobile/event/size"
-	"golang.org/x/mobile/event/touch"
-	"golang.org/x/mobile/exp/app/debug"
-	"golang.org/x/mobile/exp/f32"
-	"golang.org/x/mobile/exp/gl/glutil"
-	"golang.org/x/mobile/gl"
+	"github.com/Sidetalker/mobile/app"
+	"github.com/Sidetalker/mobile/event/lifecycle"
+	"github.com/Sidetalker/mobile/event/paint"
+	"github.com/Sidetalker/mobile/event/size"
+	"github.com/Sidetalker/mobile/event/touch"
+	"github.com/Sidetalker/mobile/exp/app/debug"
+	"github.com/Sidetalker/mobile/exp/f32"
+	"github.com/Sidetalker/mobile/exp/gl/glutil"
+	"github.com/Sidetalker/mobile/gl"
 )
 
 var (

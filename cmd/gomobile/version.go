@@ -33,7 +33,7 @@ func runVersion(cmd *command) (err error) {
 			return "", err
 		}
 		bindir := filepath.Dir(bin)
-		cmd := exec.Command("go", "install", "-x", "-n", "golang.org/x/mobile/cmd/gomobile")
+		cmd := exec.Command("go", "install", "-x", "-n", "github.com/Sidetalker/mobile/cmd/gomobile")
 		cmd.Env = append(os.Environ(), "GOBIN="+bindir)
 		out, err := cmd.CombinedOutput()
 		if err != nil {
@@ -63,7 +63,7 @@ func runVersion(cmd *command) (err error) {
 }
 
 func mobileRepoRevision() (rev string, err error) {
-	b, err := exec.Command("go", "list", "-f", "{{.Dir}}", "golang.org/x/mobile/app").CombinedOutput()
+	b, err := exec.Command("go", "list", "-f", "{{.Dir}}", "github.com/Sidetalker/mobile/app").CombinedOutput()
 	if err != nil {
 		return "", fmt.Errorf("mobile repo not found: %v, %s", err, b)
 	}

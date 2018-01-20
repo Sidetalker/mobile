@@ -81,7 +81,7 @@ func TestAndroidBuild(t *testing.T) {
 	if goos == "windows" {
 		os.Setenv("HOMEDRIVE", "C:")
 	}
-	cmdBuild.flag.Parse([]string{"golang.org/x/mobile/example/basic"})
+	cmdBuild.flag.Parse([]string{"github.com/Sidetalker/mobile/example/basic"})
 	ctx.BuildTags = []string{"tag1"}
 	err := runBuild(cmdBuild)
 	if err != nil {
