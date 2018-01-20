@@ -1309,7 +1309,7 @@ func (g *ObjcGen) objcType(typ types.Type) string {
 	case *types.Slice:
 		elem := g.objcType(typ.Elem())
 		// Special case: NSData seems to be a better option for byte slice.
-		if elem == "byte" {
+		if elem == "Byte" {
 			return "NSData*"
 		}
 		// TODO(hyangah): support other slice types: NSArray or CFArrayRef.
